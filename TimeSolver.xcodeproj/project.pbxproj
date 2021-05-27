@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC4D5468265DACFF00C1128B /* Routine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D5466265DACFF00C1128B /* Routine+CoreDataClass.swift */; };
+		CC4D5469265DACFF00C1128B /* Routine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D5467265DACFF00C1128B /* Routine+CoreDataProperties.swift */; };
+		CC4D546B265DAD1E00C1128B /* CardsWithCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D546A265DAD1E00C1128B /* CardsWithCheck.swift */; };
+		CC7C76EC2657A8E200A9E222 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C76EB2657A8E200A9E222 /* TimeView.swift */; };
+		CCDAB0182656508C004305A4 /* TimeSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0172656508C004305A4 /* TimeSolverApp.swift */; };
+		CCDAB01A2656508D004305A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0192656508C004305A4 /* ContentView.swift */; };
+		CCDAB01C2656508D004305A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAB01B2656508D004305A4 /* Assets.xcassets */; };
+		CCDAB01F2656508D004305A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAB01E2656508D004305A4 /* Preview Assets.xcassets */; };
+		CCDAB0212656508D004305A4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0202656508D004305A4 /* Persistence.swift */; };
+		CCDAB0242656508D004305A4 /* TimeSolver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0222656508D004305A4 /* TimeSolver.xcdatamodeld */; };
+		CCDAB02F2656508E004305A4 /* TimeSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */; };
+		CCDAB03A2656508E004305A4 /* TimeSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */; };
+		CCDAB04826565165004305A4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04726565165004305A4 /* Cards.swift */; };
+		CCDAB04C26565983004305A4 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04B26565983004305A4 /* Lists.swift */; };
+		CCDAB04E26566E42004305A4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04D26566E42004305A4 /* Home.swift */; };
+		CCDAB05026567245004305A4 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04F26567245004305A4 /* SheetView.swift */; };
+		CCDAB0532656800F004305A4 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0512656800F004305A4 /* Task+CoreDataClass.swift */; };
+		CCDAB0542656800F004305A4 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0522656800F004305A4 /* Task+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCDAB02B2656508E004305A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCDAB00C2656508C004305A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDAB0132656508C004305A4;
+			remoteInfo = TimeSolver;
+		};
+		CCDAB0362656508E004305A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCDAB00C2656508C004305A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDAB0132656508C004305A4;
+			remoteInfo = TimeSolver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC4D5466265DACFF00C1128B /* Routine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CC4D5467265DACFF00C1128B /* Routine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CC4D546A265DAD1E00C1128B /* CardsWithCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsWithCheck.swift; sourceTree = "<group>"; };
+		CC7C76EB2657A8E200A9E222 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		CCDAB0142656508C004305A4 /* TimeSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDAB0172656508C004305A4 /* TimeSolverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSolverApp.swift; sourceTree = "<group>"; };
+		CCDAB0192656508C004305A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCDAB01B2656508D004305A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCDAB01E2656508D004305A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCDAB0202656508D004305A4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CCDAB0232656508D004305A4 /* TimeSolver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeSolver.xcdatamodel; sourceTree = "<group>"; };
+		CCDAB0252656508D004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDAB02A2656508E004305A4 /* TimeSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSolverTests.swift; sourceTree = "<group>"; };
+		CCDAB0302656508E004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDAB0352656508E004305A4 /* TimeSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSolverUITests.swift; sourceTree = "<group>"; };
+		CCDAB03B2656508E004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDAB04726565165004305A4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		CCDAB04B26565983004305A4 /* Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
+		CCDAB04D26566E42004305A4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CCDAB04F26567245004305A4 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		CCDAB0512656800F004305A4 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCDAB0522656800F004305A4 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCDAB0112656508C004305A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0272656508E004305A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0322656508E004305A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC7C76E526579EDA00A9E222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0172656508C004305A4 /* TimeSolverApp.swift */,
+				CCDAB0192656508C004305A4 /* ContentView.swift */,
+				CCDAB04D26566E42004305A4 /* Home.swift */,
+				CCDAB04B26565983004305A4 /* Lists.swift */,
+				CC4D546A265DAD1E00C1128B /* CardsWithCheck.swift */,
+				CCDAB04726565165004305A4 /* Cards.swift */,
+				CCDAB04F26567245004305A4 /* SheetView.swift */,
+				CC7C76EB2657A8E200A9E222 /* TimeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC7C76E626579EEC00A9E222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0512656800F004305A4 /* Task+CoreDataClass.swift */,
+				CCDAB0522656800F004305A4 /* Task+CoreDataProperties.swift */,
+				CC4D5466265DACFF00C1128B /* Routine+CoreDataClass.swift */,
+				CC4D5467265DACFF00C1128B /* Routine+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC7C76E726579F0200A9E222 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB01B2656508D004305A4 /* Assets.xcassets */,
+				CCDAB0222656508D004305A4 /* TimeSolver.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC7C76E826579F1800A9E222 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0202656508D004305A4 /* Persistence.swift */,
+				CCDAB01D2656508D004305A4 /* Preview Content */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CCDAB00B2656508C004305A4 = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0162656508C004305A4 /* TimeSolver */,
+				CCDAB02D2656508E004305A4 /* TimeSolverTests */,
+				CCDAB0382656508E004305A4 /* TimeSolverUITests */,
+				CCDAB0152656508C004305A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCDAB0152656508C004305A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0142656508C004305A4 /* TimeSolver.app */,
+				CCDAB02A2656508E004305A4 /* TimeSolverTests.xctest */,
+				CCDAB0352656508E004305A4 /* TimeSolverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCDAB0162656508C004305A4 /* TimeSolver */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0252656508D004305A4 /* Info.plist */,
+				CC7C76E626579EEC00A9E222 /* Models */,
+				CC7C76E526579EDA00A9E222 /* Views */,
+				CC7C76E726579F0200A9E222 /* Resources */,
+				CC7C76E826579F1800A9E222 /* Others */,
+			);
+			path = TimeSolver;
+			sourceTree = "<group>";
+		};
+		CCDAB01D2656508D004305A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB01E2656508D004305A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCDAB02D2656508E004305A4 /* TimeSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */,
+				CCDAB0302656508E004305A4 /* Info.plist */,
+			);
+			path = TimeSolverTests;
+			sourceTree = "<group>";
+		};
+		CCDAB0382656508E004305A4 /* TimeSolverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */,
+				CCDAB03B2656508E004305A4 /* Info.plist */,
+			);
+			path = TimeSolverUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCDAB0132656508C004305A4 /* TimeSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDAB03E2656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolver" */;
+			buildPhases = (
+				CCDAB0102656508C004305A4 /* Sources */,
+				CCDAB0112656508C004305A4 /* Frameworks */,
+				CCDAB0122656508C004305A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeSolver;
+			productName = TimeSolver;
+			productReference = CCDAB0142656508C004305A4 /* TimeSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCDAB0292656508E004305A4 /* TimeSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDAB0412656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolverTests" */;
+			buildPhases = (
+				CCDAB0262656508E004305A4 /* Sources */,
+				CCDAB0272656508E004305A4 /* Frameworks */,
+				CCDAB0282656508E004305A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCDAB02C2656508E004305A4 /* PBXTargetDependency */,
+			);
+			name = TimeSolverTests;
+			productName = TimeSolverTests;
+			productReference = CCDAB02A2656508E004305A4 /* TimeSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCDAB0342656508E004305A4 /* TimeSolverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDAB0442656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolverUITests" */;
+			buildPhases = (
+				CCDAB0312656508E004305A4 /* Sources */,
+				CCDAB0322656508E004305A4 /* Frameworks */,
+				CCDAB0332656508E004305A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCDAB0372656508E004305A4 /* PBXTargetDependency */,
+			);
+			name = TimeSolverUITests;
+			productName = TimeSolverUITests;
+			productReference = CCDAB0352656508E004305A4 /* TimeSolverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCDAB00C2656508C004305A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CCDAB0132656508C004305A4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CCDAB0292656508E004305A4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CCDAB0132656508C004305A4;
+					};
+					CCDAB0342656508E004305A4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CCDAB0132656508C004305A4;
+					};
+				};
+			};
+			buildConfigurationList = CCDAB00F2656508C004305A4 /* Build configuration list for PBXProject "TimeSolver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCDAB00B2656508C004305A4;
+			productRefGroup = CCDAB0152656508C004305A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCDAB0132656508C004305A4 /* TimeSolver */,
+				CCDAB0292656508E004305A4 /* TimeSolverTests */,
+				CCDAB0342656508E004305A4 /* TimeSolverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCDAB0122656508C004305A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAB01F2656508D004305A4 /* Preview Assets.xcassets in Resources */,
+				CCDAB01C2656508D004305A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0282656508E004305A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0332656508E004305A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCDAB0102656508C004305A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4D5468265DACFF00C1128B /* Routine+CoreDataClass.swift in Sources */,
+				CCDAB04C26565983004305A4 /* Lists.swift in Sources */,
+				CCDAB05026567245004305A4 /* SheetView.swift in Sources */,
+				CCDAB0212656508D004305A4 /* Persistence.swift in Sources */,
+				CCDAB0242656508D004305A4 /* TimeSolver.xcdatamodeld in Sources */,
+				CCDAB0542656800F004305A4 /* Task+CoreDataProperties.swift in Sources */,
+				CCDAB01A2656508D004305A4 /* ContentView.swift in Sources */,
+				CC4D546B265DAD1E00C1128B /* CardsWithCheck.swift in Sources */,
+				CCDAB0182656508C004305A4 /* TimeSolverApp.swift in Sources */,
+				CCDAB0532656800F004305A4 /* Task+CoreDataClass.swift in Sources */,
+				CCDAB04E26566E42004305A4 /* Home.swift in Sources */,
+				CCDAB04826565165004305A4 /* Cards.swift in Sources */,
+				CC4D5469265DACFF00C1128B /* Routine+CoreDataProperties.swift in Sources */,
+				CC7C76EC2657A8E200A9E222 /* TimeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0262656508E004305A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAB02F2656508E004305A4 /* TimeSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAB0312656508E004305A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAB03A2656508E004305A4 /* TimeSolverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCDAB02C2656508E004305A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCDAB0132656508C004305A4 /* TimeSolver */;
+			targetProxy = CCDAB02B2656508E004305A4 /* PBXContainerItemProxy */;
+		};
+		CCDAB0372656508E004305A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCDAB0132656508C004305A4 /* TimeSolver */;
+			targetProxy = CCDAB0362656508E004305A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCDAB03C2656508E004305A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCDAB03D2656508E004305A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCDAB03F2656508E004305A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeSolver/Others/Preview Content\"";
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCDAB0402656508E004305A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeSolver/Others/Preview Content\"";
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCDAB0422656508E004305A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				INFOPLIST_FILE = TimeSolverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeSolver.app/TimeSolver";
+			};
+			name = Debug;
+		};
+		CCDAB0432656508E004305A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				INFOPLIST_FILE = TimeSolverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeSolver.app/TimeSolver";
+			};
+			name = Release;
+		};
+		CCDAB0452656508E004305A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				INFOPLIST_FILE = TimeSolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeSolver;
+			};
+			name = Debug;
+		};
+		CCDAB0462656508E004305A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99P7RD2S7T;
+				INFOPLIST_FILE = TimeSolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IanDx.TimeSolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeSolver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCDAB00F2656508C004305A4 /* Build configuration list for PBXProject "TimeSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAB03C2656508E004305A4 /* Debug */,
+				CCDAB03D2656508E004305A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDAB03E2656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAB03F2656508E004305A4 /* Debug */,
+				CCDAB0402656508E004305A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDAB0412656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAB0422656508E004305A4 /* Debug */,
+				CCDAB0432656508E004305A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDAB0442656508E004305A4 /* Build configuration list for PBXNativeTarget "TimeSolverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAB0452656508E004305A4 /* Debug */,
+				CCDAB0462656508E004305A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCDAB0222656508D004305A4 /* TimeSolver.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCDAB0232656508D004305A4 /* TimeSolver.xcdatamodel */,
+			);
+			currentVersion = CCDAB0232656508D004305A4 /* TimeSolver.xcdatamodel */;
+			path = TimeSolver.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCDAB00C2656508C004305A4 /* Project object */;
+}
