@@ -49,22 +49,27 @@ struct RoutineList: View {
         .onReceive(timerFirst) { date in
             var componets = Calendar.init(identifier: .gregorian).dateComponents([.year,.month,.day,.weekday,.hour,.minute,.second], from: date)
             componets.timeZone = TimeZone(identifier: "Asia/Shanghai")
-            if componets.hour == 20 {
+            if componets.hour == 21 {
                 timerEveryDayConnected = timerEveryDay.autoconnect()
                 timerFirst.upstream.connect().cancel()
+                refreshRoutineTime()
             }
 
         }
         .onReceive(timerEveryDayConnected) { _ in
-            viewContext.performAndWait {
-                for routine in routines {
-                    routine.timeRemaining = routine.time
-                    routine.isFinished = 0
-                }
-                try? viewContext.save()
-            }
+            refreshRoutineTime()
         }
         
+    }
+    
+    func refreshRoutineTime() {
+        viewContext.performAndWait {
+            for routine in routines {
+                routine.timeRemaining = routine.time
+                routine.isFinished = 0
+            }
+            try? viewContext.save()
+        }
     }
 }
 

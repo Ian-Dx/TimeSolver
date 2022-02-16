@@ -22,8 +22,14 @@ struct ContentView: View {
         ZStack {
             if goTaskTimeView {
                 TaskTimeView(goTimeView: $goTaskTimeView, subTitle: taskSubTitle)
+                    .onDisappear {
+                        UserDefaults.standard.setValue(0, forKey: "selectedTab")
+                    }
             }else if goRoutineTimeView {
                 RoutineTimeView(goTimeView: $goRoutineTimeView, subTitle: routineSubTitle, id: routineID!)
+                    .onDisappear {
+                        UserDefaults.standard.setValue(1, forKey: "selectedTab")
+                    }
             }else {
                 TabView(selection: $selectedTab) {
                     TaskHome(subtitle: $taskSubTitle, goTimeView: $goTaskTimeView)
@@ -31,17 +37,11 @@ struct ContentView: View {
                             Image(systemName: "exclamationmark.circle.fill")
                             Text("Tasks")
                         }
-                        .onAppear {
-                            UserDefaults.standard.setValue(0, forKey: "selectedTab")
-                        }
                         .tag(0)
                     RoutineHome(subtitle: $routineSubTitle, goTimeView: $goRoutineTimeView, id: $routineID)
                         .tabItem {
                             Image(systemName: "arrow.clockwise.circle.fill")
                             Text("Routines")
-                        }
-                        .onAppear {
-                            UserDefaults.standard.setValue(1, forKey: "selectedTab")
                         }
                         .tag(1)
                 }

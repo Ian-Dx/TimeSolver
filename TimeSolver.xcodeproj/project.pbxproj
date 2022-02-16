@@ -17,8 +17,6 @@
 		CCDAB01F2656508D004305A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAB01E2656508D004305A4 /* Preview Assets.xcassets */; };
 		CCDAB0212656508D004305A4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0202656508D004305A4 /* Persistence.swift */; };
 		CCDAB0242656508D004305A4 /* TimeSolver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0222656508D004305A4 /* TimeSolver.xcdatamodeld */; };
-		CCDAB02F2656508E004305A4 /* TimeSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */; };
-		CCDAB03A2656508E004305A4 /* TimeSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */; };
 		CCDAB04826565165004305A4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04726565165004305A4 /* Cards.swift */; };
 		CCDAB04C26565983004305A4 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04B26565983004305A4 /* Lists.swift */; };
 		CCDAB04E26566E42004305A4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAB04D26566E42004305A4 /* Home.swift */; };
@@ -58,11 +56,7 @@
 		CCDAB0232656508D004305A4 /* TimeSolver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeSolver.xcdatamodel; sourceTree = "<group>"; };
 		CCDAB0252656508D004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDAB02A2656508E004305A4 /* TimeSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSolverTests.swift; sourceTree = "<group>"; };
-		CCDAB0302656508E004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDAB0352656508E004305A4 /* TimeSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSolverUITests.swift; sourceTree = "<group>"; };
-		CCDAB03B2656508E004305A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDAB04726565165004305A4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		CCDAB04B26565983004305A4 /* Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
 		CCDAB04D26566E42004305A4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -144,8 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				CCDAB0162656508C004305A4 /* TimeSolver */,
-				CCDAB02D2656508E004305A4 /* TimeSolverTests */,
-				CCDAB0382656508E004305A4 /* TimeSolverUITests */,
 				CCDAB0152656508C004305A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,24 +170,6 @@
 				CCDAB01E2656508D004305A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CCDAB02D2656508E004305A4 /* TimeSolverTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCDAB02E2656508E004305A4 /* TimeSolverTests.swift */,
-				CCDAB0302656508E004305A4 /* Info.plist */,
-			);
-			path = TimeSolverTests;
-			sourceTree = "<group>";
-		};
-		CCDAB0382656508E004305A4 /* TimeSolverUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CCDAB0392656508E004305A4 /* TimeSolverUITests.swift */,
-				CCDAB03B2656508E004305A4 /* Info.plist */,
-			);
-			path = TimeSolverUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDAB02F2656508E004305A4 /* TimeSolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDAB03A2656508E004305A4 /* TimeSolverUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
