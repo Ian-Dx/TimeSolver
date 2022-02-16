@@ -49,7 +49,7 @@ struct RoutineList: View {
         .onReceive(timerFirst) { date in
             var componets = Calendar.init(identifier: .gregorian).dateComponents([.year,.month,.day,.weekday,.hour,.minute,.second], from: date)
             componets.timeZone = TimeZone(identifier: "Asia/Shanghai")
-            if componets.hour == 21 {
+            if componets.hour == 4 {
                 timerEveryDayConnected = timerEveryDay.autoconnect()
                 timerFirst.upstream.connect().cancel()
                 refreshRoutineTime()
