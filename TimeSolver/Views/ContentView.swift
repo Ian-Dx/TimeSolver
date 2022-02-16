@@ -33,7 +33,12 @@ struct ContentView: View {
                         selectedTab = UserDefaults.standard.integer(forKey: "selectedTab")
                     }
             }else {
-                TabView(selection: $selectedTab) {
+                TabView(selection: Binding<Int>(
+                    get: { selectedTab },
+                    set: {
+                        selectedTab = $0
+                        UserDefaults.standard.setValue(selectedTab, forKey: "selectedTab")
+                })) {
                     TaskHome(subtitle: $taskSubTitle, goTimeView: $goTaskTimeView)
                         .tabItem {
                             Image(systemName: "exclamationmark.circle.fill")
@@ -55,6 +60,7 @@ struct ContentView: View {
         }
         
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
