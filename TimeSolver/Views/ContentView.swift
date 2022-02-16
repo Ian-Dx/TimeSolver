@@ -24,11 +24,13 @@ struct ContentView: View {
                 TaskTimeView(goTimeView: $goTaskTimeView, subTitle: taskSubTitle)
                     .onDisappear {
                         UserDefaults.standard.setValue(0, forKey: "selectedTab")
+                        selectedTab = UserDefaults.standard.integer(forKey: "selectedTab")
                     }
             }else if goRoutineTimeView {
                 RoutineTimeView(goTimeView: $goRoutineTimeView, subTitle: routineSubTitle, id: routineID!)
                     .onDisappear {
                         UserDefaults.standard.setValue(1, forKey: "selectedTab")
+                        selectedTab = UserDefaults.standard.integer(forKey: "selectedTab")
                     }
             }else {
                 TabView(selection: $selectedTab) {

@@ -65,13 +65,20 @@ struct TaskSheet: View {
                                 
                                                         
                                 // 推送内容
-                                let content = UNMutableNotificationContent()
-                                content.title = "Deadline!!"
-                                let dateFormatter = DateFormatter()
-                                dateFormatter.dateFormat = "MM-dd HH:mm"
-                                let convertedDate = dateFormatter.string(from: deadline)
-                                content.body = "\(taskName) is almost due at \(convertedDate)"
-                                content.sound = UNNotificationSound.default
+                                let contentTime = UNMutableNotificationContent()
+                                contentTime.title = "Deadline!!"
+                                contentTime.body = "\(taskName) is almost due in one day!!"
+                                contentTime.sound = UNNotificationSound.default
+                                
+                                let contentDay = UNMutableNotificationContent()
+                                contentDay.title = "Deadline!!"
+                                contentDay.body = "\(taskName) is almost due in one hour!!"
+                                contentDay.sound = UNNotificationSound.default
+                                
+                                let contentHour = UNMutableNotificationContent()
+                                contentHour.title = "Deadline!!"
+                                contentHour.body = "\(taskName) is almost due now!!"
+                                contentHour.sound = UNNotificationSound.default
 
                                 
                                 // 创建trigger和request
@@ -79,9 +86,9 @@ struct TaskSheet: View {
                                 let triggerHour = UNCalendarNotificationTrigger(dateMatching: notificationHour, repeats: false)
                                 let triggerTime = UNCalendarNotificationTrigger(dateMatching: notificationTime, repeats: false)
                                 
-                                let requestDay = UNNotificationRequest(identifier: "\(taskName)_day", content: content, trigger: triggerDay)
-                                let requestHour = UNNotificationRequest(identifier: "\(taskName)_hour", content: content, trigger: triggerHour)
-                                let requestTime = UNNotificationRequest(identifier: "\(taskName)_time", content: content, trigger: triggerTime)
+                                let requestDay = UNNotificationRequest(identifier: "\(taskName)_day", content: contentDay, trigger: triggerDay)
+                                let requestHour = UNNotificationRequest(identifier: "\(taskName)_hour", content: contentHour, trigger: triggerHour)
+                                let requestTime = UNNotificationRequest(identifier: "\(taskName)_time", content: contentTime, trigger: triggerTime)
 
                                 
                                 // 添加推送
@@ -136,7 +143,7 @@ struct RoutineSheet: View {
                         }
                         
                         newRoutine.routineName = routineName
-                        if let routineTimeRemaining = Int(routineTimeRemaining), routineTimeRemaining >= 0, routineTimeRemaining <= 100 {
+                        if let routineTimeRemaining = Int(routineTimeRemaining), routineTimeRemaining >= 0, routineTimeRemaining < 60 * 12 {
                             newRoutine.timeRemaining = Int16(routineTimeRemaining) * 60
                             newRoutine.time = Int16(routineTimeRemaining) * 60
                         }else {

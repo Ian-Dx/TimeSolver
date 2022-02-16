@@ -11,6 +11,7 @@ struct TaskCard: View {
     @Binding var task: Task
     @Binding var priority: Int16
     @State var componets: DateComponents?
+    @State var remainingDays: Int = 0
     
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -23,12 +24,19 @@ struct TaskCard: View {
                     .shadow(radius: 5, x: 5, y: 5)
                 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text(task.taskName!)
-                        .font(.system(size: 20))
-                        .bold()
-                        .foregroundColor(.gray)
+                    HStack {
+                        Text(task.taskName!)
+                            .font(.system(size: 20))
+                            .bold()
+                            .foregroundColor(.gray)
+                        Spacer()
+                        Text("Due in \(remainingDays) days")
+                            .font(.system(size: 18))
+                            .foregroundColor(.gray)
+
+                    }
                     HStack(spacing: 2) {
-                        Text("\(componets!.month!)-\(componets!.day!) \(componets!.hour!):\(componets!.minute!)")
+                        Text(String(format: "\(componets!.month!)-\(componets!.day!) %02d:%02d", componets!.hour!, componets!.minute!))
                             .foregroundColor(.gray)
                         Spacer()
                         if priority > 0 {
@@ -51,6 +59,8 @@ struct TaskCard: View {
         }
         .onAppear {
             componets = Calendar.init(identifier: .gregorian).dateComponents([.year,.month,.day,.weekday,.hour,.minute,.second], from: task.deadline!)
+            let day = Calendar.current.component(.day, from: Date())
+            remainingDays = (componets?.day!)! - day
         }
         .frame(width: W - 100, height: 100)
         .padding(.vertical, 10)
@@ -79,7 +89,7 @@ struct RoutineCard: View {
                     .bold()
                     .foregroundColor(.gray)
                 Spacer()
-                Text("\(Int(routine.timeRemaining / 60)) mins \(Int(routine.timeRemaining % 60)) secs")
+                Text(String(format: "%02d mins %02d secs", Int(routine.timeRemaining / 60), Int(routine.timeRemaining % 60)))
                     .font(.system(size: 12))
                     .foregroundColor(.gray)
             }
