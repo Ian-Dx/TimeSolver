@@ -59,8 +59,7 @@ struct TaskCard: View {
         }
         .onAppear {
             componets = Calendar.init(identifier: .gregorian).dateComponents([.year,.month,.day,.weekday,.hour,.minute,.second], from: task.deadline!)
-            let day = Calendar.current.component(.day, from: Date())
-            remainingDays = (componets?.day!)! - day
+            remainingDays = Int(Calendar.current.dateComponents([.day], from: Date(), to: task.deadline!).day!)
         }
         .frame(width: W - 100, height: 100)
         .padding(.vertical, 10)
@@ -89,7 +88,7 @@ struct RoutineCard: View {
                     .bold()
                     .foregroundColor(.gray)
                 Spacer()
-                Text(String(format: "%02d mins %02d secs", Int(routine.timeRemaining / 60), Int(routine.timeRemaining % 60)))
+                Text(String(format: "%02d:%02d", Int(routine.timeRemaining / 60), Int(routine.timeRemaining % 60)))
                     .font(.system(size: 12))
                     .foregroundColor(.gray)
             }
